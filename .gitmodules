@@ -1,0 +1,42 @@
+[submodule "ironsea_index"]
+	path = ironsea_index
+	url = ../ironsea_index
+[submodule "ironsea_index_hashmap"]
+	path = ironsea_index_hashmap
+	url = ../ironsea_index_hashmap
+[submodule "ironsea_index_sfc_dbc"]
+	path = ironsea_index_sfc_dbc
+	url = ../ironsea_index_sfc_dbc
+[submodule "ironsea_store"]
+	path = ironsea_store
+	url = ../ironsea_store
+[submodule "ironsea_store_buffered_file"]
+	path = ironsea_store_buffered_file
+	url = ../ironsea_store_buffered_file
+[submodule "ironsea_store_mapped_file"]
+	path = ironsea_store_mapped_file
+	url = ../ironsea_store_mapped_file
+[submodule "ironsea_store_file"]
+	path = ironsea_store_file
+	url = ../ironsea_store_file
+[submodule "ironsea_table"]
+	path = ironsea_table
+	url = ../ironsea_table
+[submodule "ironsea_table_vector"]
+	path = ironsea_table_vector
+	url = ../ironsea_table_vector
+[submodule "mercator_data_generator"]
+	path = mercator_data_generator
+	url = ../mercator_data_generator
+[submodule "mercator_db"]
+	path = mercator_db
+	url = ../mercator_db
+[submodule "mercator_service"]
+	path = mercator_service
+	url = ../mercator_service
+[submodule "mercator_parser"]
+	path = mercator_parser
+	url = ../mercator_parser
+[submodule "mercator_indexer"]
+	path = mercator_indexer
+	url = ../mercator_indexer
