@@ -45,21 +45,17 @@ This enables the index implementations to be agnostic from the underlying data s
    cd mercator_indexer
    for f in ../mercator_data_generator/1*.json
    do
-   	ln -s $f
+   	    ln -s $f
    done
    cargo run --release -- 1k 10k 100k
    ```
-
- * Run the Spatial Index, while providing one of the datasets. Currently only one dataset (core) can be loaded at a time.
+   
+ * Run the Spatial Index, while providing the path to the datasets.
 
    ```sh
    cd mercator_service
-   for f in ../mercator_indexer/*.index
-   do
-   	ln -s $f
-   done
    RUST_LOG="warn,actix_web=info,mercator_service=trace" \
-     MERCATOR_IMPORT_DATA="100k" \
+     MERCATOR_DATA="../mercator_indexer/" \
      MERCATOR_ALLOWED_ORIGINS="http://localhost:3200" \
      cargo run --release
    ```
