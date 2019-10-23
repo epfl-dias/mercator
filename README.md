@@ -27,7 +27,7 @@ This enables the index implementations to be agnostic from the underlying data s
  * Clone the workspace, which will take care of bringing all the repositories needed.
 
    ```sh
-   git clone --recurse git@gitlab.epfl.ch:DIAS/PROJECTS/HBP-SP5/mercator.git
+   git clone --recurse <repository URI>
    ```
 
    The following steps assume the working directory is the root of the mercator repository.
@@ -45,11 +45,11 @@ This enables the index implementations to be agnostic from the underlying data s
    cd mercator_indexer
    for f in ../mercator_data_generator/1*.json
    do
-   	    ln -s $f
+       ln -s $f
    done
    cargo run --release -- 1k 10k 100k
    ```
-   
+
  * Run the Spatial Index, while providing the path to the datasets.
 
    ```sh
@@ -62,7 +62,7 @@ This enables the index implementations to be agnostic from the underlying data s
 
 ## Documentation
 
-For more information, please refer to the [documentation](https://epfl-dias.github.io/PROJECT_NAME/).
+For more information, please refer to the [documentation](https://epfl-dias.github.io/mercator/).
 
 If you want to build the documentation and access it locally, you can use:
 
