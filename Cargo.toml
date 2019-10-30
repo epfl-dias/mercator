@@ -22,6 +22,9 @@ members = [
     "ironsea_table_vector",
 ]
 
+[profile.release]
+lto = true
+
 [patch.crates-io]
 mercator_db = { path = "mercator_db" }
 mercator_parser = { path = "mercator_parser" }
