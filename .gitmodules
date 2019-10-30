@@ -19,12 +19,6 @@
 [submodule "ironsea_store_file"]
 	path = ironsea_store_file
 	url = ../ironsea_store_file
-[submodule "ironsea_table"]
-	path = ironsea_table
-	url = ../ironsea_table
-[submodule "ironsea_table_vector"]
-	path = ironsea_table_vector
-	url = ../ironsea_table_vector
 [submodule "mercator_data_generator"]
 	path = mercator_data_generator
 	url = ../mercator_data_generator
