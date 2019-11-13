@@ -39,7 +39,7 @@ This enables the index implementations to be agnostic from the underlying data s
    cargo run --release -- 1 10 100
    ```
 
- * Index the data:
+ * Link the data in the indexer folder (It has to be in the current working directory when calling the indexer):
 
    ```sh
    cd mercator_indexer
@@ -47,6 +47,11 @@ This enables the index implementations to be agnostic from the underlying data s
    do
        ln -s $f
    done
+   ```
+
+ * Index the data:
+
+   ```sh
    cargo run --release -- 1k 10k 100k
    ```
 
