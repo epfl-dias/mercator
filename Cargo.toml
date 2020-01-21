@@ -15,13 +15,14 @@ members = [
     # Specific implementations
     "ironsea_index_hashmap",
     "ironsea_index_sfc_dbc",
-    "ironsea_store_buffered_file",
-    "ironsea_store_file",
-    "ironsea_store_mapped_file",
+    #"ironsea_store_buffered_file",
+    #"ironsea_store_file",
+    #"ironsea_store_mapped_file",
 ]
 
 [profile.release]
 lto = true
+#debug = true
 
 [patch.crates-io]
 mercator_db = { path = "mercator_db" }
@@ -32,6 +33,6 @@ ironsea_store = { path = "ironsea_store" }
 
 ironsea_index_hashmap = { path = "ironsea_index_hashmap" }
 ironsea_index_sfc_dbc = { path = "ironsea_index_sfc_dbc" }
-ironsea_store_buffered_file = { path = "ironsea_store_buffered_file" }
-ironsea_store_file = { path = "ironsea_store_file" }
-ironsea_store_mapped_file = { path = "ironsea_store_mapped_file" }
+#ironsea_store_buffered_file = { path = "ironsea_store_buffered_file" }
+#ironsea_store_file = { path = "ironsea_store_file" }
+#ironsea_store_mapped_file = { path = "ironsea_store_mapped_file" }
