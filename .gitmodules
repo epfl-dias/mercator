@@ -34,3 +34,6 @@
 [submodule "mercator_indexer"]
 	path = mercator_indexer
 	url = ../mercator_indexer
+[submodule "mercator_solr_data_converter"]
+	path = mercator_solr_data_converter
+	url = ../mercator_solr_data_converter
