@@ -10,7 +10,7 @@ members = [
 
     # Generic Interfaces
     "ironsea_index",
-    "ironsea_store",
+    #"ironsea_store",
 
     # Specific implementations
     "ironsea_index_hashmap",
@@ -29,7 +29,7 @@ mercator_db = { path = "mercator_db" }
 mercator_parser = { path = "mercator_parser" }
 
 ironsea_index = { path = "ironsea_index" }
-ironsea_store = { path = "ironsea_store" }
+#ironsea_store = { path = "ironsea_store" }
 
 ironsea_index_hashmap = { path = "ironsea_index_hashmap" }
 ironsea_index_sfc_dbc = { path = "ironsea_index_sfc_dbc" }

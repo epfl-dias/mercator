@@ -888,14 +888,9 @@ dependencies = [
  "arrayref 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "bincode 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "ironsea_index 0.1.0",
- "ironsea_store 0.1.0",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.104 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
-
-[[package]]
-name = "ironsea_store"
-version = "0.1.0"
 
 [[package]]
 name = "itertools"

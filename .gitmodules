@@ -7,18 +7,6 @@
 [submodule "ironsea_index_sfc_dbc"]
 	path = ironsea_index_sfc_dbc
 	url = ../ironsea_index_sfc_dbc
-[submodule "ironsea_store"]
-	path = ironsea_store
-	url = ../ironsea_store
-[submodule "ironsea_store_buffered_file"]
-	path = ironsea_store_buffered_file
-	url = ../ironsea_store_buffered_file
-[submodule "ironsea_store_mapped_file"]
-	path = ironsea_store_mapped_file
-	url = ../ironsea_store_mapped_file
-[submodule "ironsea_store_file"]
-	path = ironsea_store_file
-	url = ../ironsea_store_file
 [submodule "mercator_data_generator"]
 	path = mercator_data_generator
 	url = ../mercator_data_generator
