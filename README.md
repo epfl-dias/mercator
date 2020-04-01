@@ -27,7 +27,7 @@ This enables the index implementations to be agnostic from the underlying data s
  * Clone the workspace, which will take care of bringing all the repositories needed.
 
    ```sh
-   git clone --recurse <repository URI>
+   git clone --recurse https://github.com/epfl-dias/mercator
    ```
 
    The following steps assume the working directory is the root of the mercator repository.
@@ -49,31 +49,47 @@ This enables the index implementations to be agnostic from the underlying data s
    done
    ```
 
- * Index the data:
+ * Index the data (assuming the datasets generated above):
 
    ```sh
    cargo run --release -- 1k 10k 100k
+   mv *.index ../mercator_service
    ```
 
  * Run the Spatial Index, while providing the path to the datasets.
 
    ```sh
    cd mercator_service
-   RUST_LOG="warn,actix_web=info,mercator_service=trace" \
-     MERCATOR_DATA="../mercator_indexer/" \
-     MERCATOR_ALLOWED_ORIGINS="http://localhost:3200" \
-     cargo run --release
+   cargo run --release
    ```
 
 ## Documentation
 
-For more information, please refer to the [documentation](https://epfl-dias.github.io/mercator/).
+For more information, please refer to each sub projects, as well as the on-line help for the tools & utilities.
 
-If you want to build the documentation and access it locally, you can use:
+### Tools
 
-```sh
-cargo doc --open
-```
+ * Mercator Service
+   **[[src](https://github.com/epfl-dias/mercator_service), [doc](https://epfl-dias.github.io/mercator_service/)]**
+ * Mercator Indexer
+   **[[src](https://github.com/epfl-dias/mercator_indexer)]**
+
+### Utilities
+
+ * Mercator Data Generator
+   **[[src](https://github.com/epfl-dias/mercator_data_generator/)]**
+
+### Libraries
+
+ * IronSea Index
+    **[[src](https://github.com/epfl-dias/ironsea_index/), [doc](https://epfl-dias.github.io/ironsea_index/)]**
+ * IronSea Index HashMap
+    **[[src](https://github.com/epfl-dias/ironsea_index_hashmap/), [doc](https://epfl-dias.github.io/ironsea_index_hashmap/)]**
+ * IronSea Index SFC-DBC
+   **[[src](https://github.com/epfl-dias/ironsea_index_sfc_dbc/), [doc](https://epfl-dias.github.io/ironsea_index_sfc_dbc/)]**
+ * Mercator DB
+   **[[src](https://github.com/epfl-dias/mercator_db/), [doc](https://epfl-dias.github.io/mercator_db/)]**
+ * Mercator Parser **[[src](https://github.com/epfl-dias/mercator_parser/), [doc](https://epfl-dias.github.io/mercator_parser/), [query language](https://epfl-dias.github.io/mercator_parser/book/)]**
 
 ## Acknowledgements
 
